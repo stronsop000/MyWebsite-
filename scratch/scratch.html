@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia's Scratch Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f4f9fc;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .header {
+            background-color: #e3f2fd;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 2px solid #0d6efd;
+        }
+        
+        .header h1 {
+            color: #0d6efd;
+        }
+        
+        .bucket-lists {
+            margin: 2rem auto;
+            max-width: 700px;
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .bucket-lists h2 {
+            color: #0d6efd;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.5rem;
+        }
+        
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            color: #0d6efd;
+            margin-top: 3rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Things I Love & Dream About</h1>
+        <p class="lead">From swimming laps to future TED Talks — here's what keeps me excited about life.</p>
+        <a href="#tableau" class="btn btn-outline-primary mt-2">Jump to Tableau Chart</a>
+    </div>
+
+    <div class="bucket-lists">
+        <h2>My Favorite Things</h2>
+        <ol>
+            <li>Wellness & Movement
+                <ul>
+                    <li>Swimming 🏊‍♀️</li>
+                    <li>Training for a half marathon 🏃‍♀️</li>
+                    <li>Hiking new trails 🪶</li>
+                </ul>
+            </li>
+            <li>Mind & Creativity
+                <ul>
+                    <li>Reading 📚</li>
+                    <li>Dreaming about writing a book ✍️</li>
+                    <li>Hoping to give a TED Talk one day 🎤</li>
+                </ul>
+            </li>
+            <li>Adventure & Connection
+                <ul>
+                    <li>Spending time with friends 💬</li>
+                    <li>Future trip to South Africa 🌍</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="container text-center my-5">
+        <h2 class="section-title">A Place That Inspires Me</h2>
+        <img src="../assets/img/mountain-lake.jpg" alt="Mountain Lake View" class="img-fluid rounded shadow" style="max-width: 700px;">
+    </div>
+
+    <div class="container text-center my-5">
+        <h2 class="section-title">A Video That Motivates Me</h2>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/DL8_WHr9COs" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="tableau" class="container text-center my-5">
+        <h2 class="section-title">Interactive Tableau Chart</h2>
+        <div class="d-flex justify-content-center">
+            <div class="tableauPlaceholder" id="viz1749167691699" style="max-width: 1000px; width: 100%;">
+                <noscript>
+          <a href='#'>
+            <img alt='2018 College Return on Investment' src='https://public.tableau.com/static/images/Co/CollegeReturnonInvestment_0/CollegeReturnonInvestment/1_rss.png' style='border: none'/>
+          </a>
+        </noscript>
+                <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='CollegeReturnonInvestment_0/CollegeReturnonInvestment' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Co/CollegeReturnonInvestment_0/CollegeReturnonInvestment/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1749167691699');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = "100%";
+        vizElement.style.maxWidth = "960px";
+        vizElement.style.height = "580px";
+        vizElement.style.margin = "0 auto";
+        vizElement.style.display = "block";
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <footer>
+        <a href="../index.html" class="text-white text-decoration-underline">&larr; Back to Home</a>
+    </footer>
+</body>
+
+</html>

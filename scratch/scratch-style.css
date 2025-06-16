@@ -1,0 +1,29 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.header {
+  background-color: #ffd9e8;
+  padding: 2em;
+  text-align: center;
+}
+.bucket-lists, .video-section, .image-section, .tableau-chart, .footer {
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+h1, h2 {
+  color: #800080;
+}
+ul, ol {
+  margin-left: 2em;
+}
+.footer {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 1em;
+}
